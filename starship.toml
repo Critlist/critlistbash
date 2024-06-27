@@ -32,12 +32,12 @@ add_newline = true
 # You can also replace your username with a neat symbol like  to save some space
 [username]
 show_always = true
-style_user = "bg:#33dd2d"
-style_root = "bg:#2e2e2e"
+style_user = "fg:#2e2e2e bg:#33dd2d"
+style_root = "bg:#2e2e2e fg:#33dd2d"
 format = '[$user ]($style)'
 
 [directory]
-style = "bg:#6fc2db"
+style = "fg:#2e2e2e bg:#6fc2db"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -61,75 +61,75 @@ discharging_symbol = '💀 '
 
 [c]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [docker_context]
 symbol = " "
-style = "bg:#06969A"
+style = "fg:#2e2e2e bg:#06969A"
 format = '[ $symbol $context ]($style) $path'
 
 [elixir]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [elm]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [git_branch]
 symbol = ""
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol $branch ]($style)'
 
 [git_status]
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[$all_status$ahead_behind ]($style)'
 
 [golang]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [haskell]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [java]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [julia]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [nodejs]
 symbol = ""
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [nim]
 symbol = " "
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [python]
 symbol = ''
-style = "bg:#33dd2d"
+style = "fg:#2e2e2e bg:#33dd2d"
 format = '[(\($virtualenv\) )]($style)'
 
 [rust]
 symbol = ""
-style = "bg:#a1b1d9"
+style = "fg:#2e2e2e bg:#a1b1d9"
 format = '[ $symbol ($version) ]($style)'
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:#d72ddd"
+style = "fg:#2e2e2e bg:#d72ddd"
 format = '[ $time ]($style)'
