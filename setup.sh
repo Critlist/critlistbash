@@ -6,17 +6,17 @@ YELLOW='\e[33m'
 GREEN='\e[32m'
 
 # Check if the home directory and linuxtoolbox folder exist, create them if they don't
-LINUXTOOLBOXDIR="$HOME/linuxtoolbox"
+CONFIGDIR="$HOME/.config"
 
-if [[ ! -d "$LINUXTOOLBOXDIR" ]]; then
-    echo -e "${YELLOW}Creating linuxtoolbox directory: $LINUXTOOLBOXDIR${RC}"
-    mkdir -p "$LINUXTOOLBOXDIR"
-    echo -e "${GREEN}linuxtoolbox directory created: $LINUXTOOLBOXDIR${RC}"
+if [[ ! -d "$CONFIGDIR" ]]; then
+    echo -e "${YELLOW}Creating linuxtoolbox directory: $CONFIGDIR${RC}"
+    mkdir -p "$CONFIGDIR"
+    echo -e "${GREEN}linuxtoolbox directory created: $CONFIGDIR${RC}"
 fi
 
-if [[ ! -d "$LINUXTOOLBOXDIR/mybash" ]]; then
-    echo -e "${YELLOW}Cloning mybash repository into: $LINUXTOOLBOXDIR/mybash${RC}"
-    git clone https://github.com/ChrisTitusTech/mybash "$LINUXTOOLBOXDIR/mybash"
+if [[ ! -d "$CONFIGDIR/mybash" ]]; then
+    echo -e "${YELLOW}Cloning mybash repository into: $CONFIGDIR/mybash${RC}"
+    git clone https://github.com/Critlist/critlistbash.git "$CONFIGDIR/mybash"
     if [[ $? -eq 0 ]]; then
         echo -e "${GREEN}Successfully cloned mybash repository${RC}"
     else
@@ -25,7 +25,7 @@ if [[ ! -d "$LINUXTOOLBOXDIR/mybash" ]]; then
     fi
 fi
 
-cd "$LINUXTOOLBOXDIR/mybash"
+cd "$CONFIGDIR/mybash"
 
 command_exists() {
     command -v $1 >/dev/null 2>&1
